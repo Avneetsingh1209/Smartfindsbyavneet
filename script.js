@@ -2,8 +2,8 @@ const products = [
 
 {
 name: "Adjustable Phone Stand",
-image: "https://m.media-amazon.com/images/I/61WPU9K9ZQL._AC_SL1500_.jpg",
-link: "YOUR_AMAZON_AFFILIATE_LINK"
+image: "https://m.media-amazon.com/images/I/51FnbY-cX6L._SL1500_.jpg",
+link: "https://amzn.to/4swUHc7"
 },
 
 {
@@ -34,5 +34,6 @@ card.innerHTML = `
 `;
 
 container.appendChild(card);
+
 
 });
