@@ -8,14 +8,14 @@ link: "https://amzn.to/4swUHc7"
 
 {
 name: "Mini Gorilla Tripod",
-image: "https://m.media-amazon.com/images/I/61oJvYz8gPL._AC_SL1500_.jpg",
-link: "YOUR_AMAZON_AFFILIATE_LINK"
+image: "https://m.media-amazon.com/images/I/61MiWNysELL._SL1500_.jpg",
+link: "https://amzn.to/4rrwWBd"
 },
 
 {
 name: "Rechargeable LED Desk Lamp",
-image: "https://m.media-amazon.com/images/I/61JkH3qUeUL._AC_SL1500_.jpg",
-link: "YOUR_AMAZON_AFFILIATE_LINK"
+image: "https://m.media-amazon.com/images/I/61L1WtnLLeL._SL1500_.jpg",
+link: "https://amzn.to/4rqWT40"
 }
 
 ];
@@ -34,5 +34,6 @@ card.innerHTML = `
 `;
 
 container.appendChild(card);
+
 
 });
