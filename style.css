@@ -241,3 +241,44 @@ transition:color 0.2s;
 nav a:hover{
 color:#2563eb;
 }
+
+/* MENU TOGGLE BUTTON */
+
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* MOBILE STYLES */
+
+@media (max-width: 768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+position:absolute;
+top:60px;
+right:0;
+background:#ffffff;
+width:100%;
+display:none;
+flex-direction:column;
+border-top:1px solid #e5e7eb;
+}
+
+nav a{
+margin:0;
+padding:16px;
+border-bottom:1px solid #f1f5f9;
+display:block;
+text-align:center;
+}
+
+nav.show{
+display:flex;
+}
+
+}
