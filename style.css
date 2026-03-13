@@ -196,3 +196,48 @@ font-size:13px;
 color:#6b7280;
 padding:30px;
 }
+
+/* 🔷 NAVBAR */
+
+.navbar{
+background:#ffffff;
+border-bottom:1px solid #e5e7eb;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* LOGO */
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#111827;
+}
+
+.logo span{
+color:#2563eb;
+}
+
+/* NAV LINKS */
+
+nav a{
+margin-left:22px;
+text-decoration:none;
+color:#374151;
+font-weight:500;
+transition:color 0.2s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
