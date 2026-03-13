@@ -23,6 +23,12 @@ name: "Rechargeable LED Desk Lamp",
 image: "https://m.media-amazon.com/images/I/61L1WtnLLeL._SL1500_.jpg",
 link: "https://amzn.to/4rqWT40"
 },
+  
+{
+name: "USB-C Multi Port Hub",
+image: "https://m.media-amazon.com/images/I/71A1ZR39i4L._SL1500_.jpg",
+link: "https://amzn.to/4uL3t8r"
+},
 
 {
 name: "Adjustable Laptop Stand",
