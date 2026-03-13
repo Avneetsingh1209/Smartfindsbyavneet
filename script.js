@@ -23,7 +23,6 @@ name: "Adjustable Laptop Stand",
 image: "https://m.media-amazon.com/images/I/61jnQQBK4tL._SL1500_.jpg",
 link: "https://amzn.to/3PzlEgU"
 }
-
 ];
 
 const container = document.getElementById("product-list");
