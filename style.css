@@ -45,3 +45,25 @@ border-radius:6px;
 text-decoration:none;
 font-weight:bold;
 }
+
+.rating{
+color:#f39c12;
+font-weight:bold;
+margin:6px 0;
+}
+
+.desc{
+font-size:14px;
+color:#555;
+margin:6px 0;
+}
+
+.badge{
+background:#ffeaa7;
+display:inline-block;
+padding:5px 8px;
+border-radius:6px;
+font-size:12px;
+margin:8px 0;
+font-weight:bold;
+}
