@@ -103,3 +103,93 @@ font-size:12px;
 margin:8px 0;
 font-weight:bold;
 }
+/* BRAND HEADER */
+
+.main-header{
+background:#ffffff;
+padding:16px 30px;
+border-bottom:1px solid #e5e7eb;
+text-align:left;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#2563eb;
+}
+
+/* HERO */
+
+.hero{
+padding:60px 20px 30px;
+background:#f6f8fb;
+}
+
+.hero h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#6b7280;
+font-size:16px;
+}
+
+/* TOP PICK */
+
+.top-pick{
+max-width:900px;
+margin:40px auto;
+padding:0 20px;
+text-align:left;
+}
+
+.top-pick h2{
+margin-bottom:20px;
+}
+
+.top-card{
+display:flex;
+gap:20px;
+background:#ffffff;
+padding:20px;
+border-radius:14px;
+box-shadow:0 8px 30px rgba(0,0,0,0.06);
+flex-wrap:wrap;
+}
+
+.top-card img{
+width:260px;
+border-radius:12px;
+}
+
+.top-info{
+flex:1;
+}
+
+.top-info h3{
+margin-top:0;
+}
+
+/* TRUST SECTION */
+
+.trust{
+background:#ffffff;
+padding:50px 20px;
+margin-top:40px;
+}
+
+.trust p{
+max-width:700px;
+margin:auto;
+color:#4b5563;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+font-size:13px;
+color:#6b7280;
+padding:30px;
+}
