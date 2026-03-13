@@ -12,6 +12,12 @@ image: "https://m.media-amazon.com/images/I/61MiWNysELL._SL1500_.jpg",
 link: "https://amzn.to/4rrwWBd"
 },
 
+  {
+name: "Mini Gorilla Tripod",
+image: "https://m.media-amazon.com/images/I/61MiWNysELL._SL1500_.jpg",
+link: "https://amzn.to/4rrwWBd"
+},
+  
 {
 name: "Rechargeable LED Desk Lamp",
 image: "https://m.media-amazon.com/images/I/61L1WtnLLeL._SL1500_.jpg",
