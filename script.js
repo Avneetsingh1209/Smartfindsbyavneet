@@ -12,6 +12,12 @@ image: "https://m.media-amazon.com/images/I/61MiWNysELL._SL1500_.jpg",
 link: "https://amzn.to/4rrwWBd"
 },
 
+{
+name: "Foldable Laptop Stand",
+image: "https://m.media-amazon.com/images/I/61i05gGBl3L._SL1500_.jpg",
+link: "https://amzn.to/4utwmWo"
+},
+  
   {
 name: "Cable Management Box",
 image: "https://m.media-amazon.com/images/I/51x0WNS+X+L._SL1500_.jpg",
