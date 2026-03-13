@@ -18,6 +18,12 @@ image: "https://m.media-amazon.com/images/I/61L1WtnLLeL._SL1500_.jpg",
 link: "https://amzn.to/4rqWT40"
 }
 
+  {
+name: "Adjustable Laptop Stand",
+image: "https://m.media-amazon.com/images/I/61jnQQBK4tL._SL1500_.jpg",
+link: "https://amzn.to/3PzlEgU"
+}
+
 ];
 
 const container = document.getElementById("product-list");
