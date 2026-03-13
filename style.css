@@ -159,8 +159,11 @@ flex-wrap:wrap;
 }
 
 .top-card img{
-width:260px;
+width:100%;
+max-width:280px;
+height:auto;
 border-radius:12px;
+object-fit:contain;
 }
 
 .top-info{
