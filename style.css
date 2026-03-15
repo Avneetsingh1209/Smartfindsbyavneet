@@ -389,3 +389,50 @@ font-size:15px;
 }
 
 }
+
+/* ============================= */
+/* 📱 MOBILE — PREMIUM CATEGORY UI */
+/* ============================= */
+
+@media (max-width: 768px){
+
+/* Section spacing */
+
+.categories{
+padding:40px 16px;
+}
+
+/* Grid becomes 2 columns */
+
+.category-grid{
+grid-template-columns:repeat(2, 1fr);
+gap:14px;
+}
+
+/* Card becomes larger tap target */
+
+.category-card{
+padding:18px 12px;
+border-radius:16px;
+font-size:15px;
+font-weight:600;
+
+flex-direction:column;
+gap:6px;
+
+box-shadow:0 8px 28px rgba(0,0,0,0.06);
+}
+
+/* Icon bigger for visual hierarchy */
+
+.category-card .icon{
+font-size:26px;
+}
+
+/* Remove hover jump on touch devices */
+
+.category-card:hover{
+transform:none;
+}
+
+}
