@@ -533,23 +533,26 @@ color:#2563eb;
 font-weight:bold;
 }
 
-/* ===== TRENDING BANNER FIX ===== */
-
-.trending-banner{
-padding:40px 20px;
-background:#ffffff;
-text-align:center;
-}
+/* ===== TRENDING BANNER ===== */
 
 .trending-banner img{
 width:100%;
-max-width:700px;     /* ⭐ Prevents huge size */
-max-height:420px;    /* ⭐ Controls vertical height */
-object-fit:cover;    /* ⭐ Crops instead of stretching */
+height:auto;
+max-width:900px;   /* ⭐ Bigger on desktop */
 border-radius:16px;
 box-shadow:0 12px 40px rgba(0,0,0,0.12);
 display:block;
 margin:auto;
+}
+
+/* 📱 MOBILE — keep current perfect size */
+
+@media (max-width: 768px){
+
+.trending-banner img{
+max-width:100%;   /* full width on phone */
+}
+
 }
 
 .products-section{
