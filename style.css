@@ -533,7 +533,7 @@ color:#2563eb;
 font-weight:bold;
 }
 
-/* ===== TRENDING PIN BANNER ===== */
+/* ===== TRENDING BANNER FIX ===== */
 
 .trending-banner{
 padding:40px 20px;
@@ -541,23 +541,16 @@ background:#ffffff;
 text-align:center;
 }
 
-.trending-banner h2{
-margin-bottom:20px;
-}
-
 .trending-banner img{
 width:100%;
-max-width:900px;
+max-width:700px;     /* ⭐ Prevents huge size */
+max-height:420px;    /* ⭐ Controls vertical height */
+object-fit:cover;    /* ⭐ Crops instead of stretching */
 border-radius:16px;
 box-shadow:0 12px 40px rgba(0,0,0,0.12);
-transition:transform 0.25s;
+display:block;
+margin:auto;
 }
-
-.trending-banner img:hover{
-transform:translateY(-6px);
-}
-
-@media (max-width: 768px){
 
 .products-section{
 display:none;   /* hide long product grid */
