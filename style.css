@@ -532,3 +532,27 @@ text-decoration:none;
 color:#2563eb;
 font-weight:bold;
 }
+
+/* ===== TRENDING PIN BANNER ===== */
+
+.trending-banner{
+padding:40px 20px;
+background:#ffffff;
+text-align:center;
+}
+
+.trending-banner h2{
+margin-bottom:20px;
+}
+
+.trending-banner img{
+width:100%;
+max-width:900px;
+border-radius:16px;
+box-shadow:0 12px 40px rgba(0,0,0,0.12);
+transition:transform 0.25s;
+}
+
+.trending-banner img:hover{
+transform:translateY(-6px);
+}
