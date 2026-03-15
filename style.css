@@ -282,3 +282,35 @@ display:flex;
 }
 
 }
+
+/* POPULAR GUIDES */
+
+.guides{
+padding:60px 20px;
+background:#ffffff;
+}
+
+.guide-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.guide-card{
+background:#f6f8fb;
+padding:22px;
+border-radius:14px;
+text-decoration:none;
+font-weight:bold;
+color:#111827;
+box-shadow:0 6px 25px rgba(0,0,0,0.05);
+transition:transform 0.2s, box-shadow 0.2s;
+}
+
+.guide-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 35px rgba(0,0,0,0.08);
+color:#2563eb;
+}
