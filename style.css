@@ -556,3 +556,15 @@ transition:transform 0.25s;
 .trending-banner img:hover{
 transform:translateY(-6px);
 }
+
+@media (max-width: 768px){
+
+.products-section{
+display:none;   /* hide long product grid */
+}
+
+.guides{
+display:none;   /* optional */
+}
+
+}
