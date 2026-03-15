@@ -436,3 +436,10 @@ transform:none;
 }
 
 }
+
+/* Prevent accidental text selection while tapping */
+
+.category-card{
+-webkit-tap-highlight-color: transparent;
+user-select:none;
+}
