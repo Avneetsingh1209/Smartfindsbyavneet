@@ -569,3 +569,31 @@ display:none;   /* optional */
 }
 
 }
+
+.quick-picks{
+padding:40px 20px;
+background:#ffffff;
+text-align:center;
+}
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:16px;
+max-width:900px;
+margin:auto;
+}
+
+.quick-card{
+background:#2563eb;
+color:white;
+padding:18px;
+border-radius:14px;
+text-decoration:none;
+font-weight:bold;
+transition:transform 0.2s;
+}
+
+.quick-card:hover{
+transform:translateY(-4px);
+}
