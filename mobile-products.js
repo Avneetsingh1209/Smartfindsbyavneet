@@ -14,7 +14,7 @@ name: "Wireless Power Bank",
 image: "https://m.media-amazon.com/images/I/71VBkV4+9KL._SL1500_.jpg",
 link: "https://amzn.to/4rNx8Lk",
 rating: "⭐ 4.4/5 (12K+ reviews)",
-desc: "Perfect for video calls & hands-free viewing.",
+desc: "Perfect for charging without any hassle.",
 badge: "🔥 Best Budget Pick"
 },
 {
