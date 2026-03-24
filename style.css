@@ -1,246 +1,58 @@
-/* ========================================= */
-/* 💎 PREMIUM ELITE THEME — SmartFindsByAvneet */
-/* ========================================= */
-
-/* ===== BASE ===== */
-
 body{
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",
-Roboto,Inter,Arial,sans-serif;
-
-background:#f3f5f8;
+font-family: 'Segoe UI', Arial, sans-serif;
+background:#f6f8fb;
 margin:0;
 padding:0;
-color:#0f172a;
-line-height:1.6;
+color:#111827;
 text-align:center;
 }
 
-/* SECTION WIDTH */
+/* HEADER */
 
-section{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-/* ========================================= */
-/* 🔷 NAVBAR */
-/* ========================================= */
-
-.navbar{
+header{
 background:#ffffff;
-border-bottom:1px solid #e2e8f0;
-position:sticky;
-top:0;
-z-index:1000;
-backdrop-filter: blur(8px);
-}
-
-.nav-container{
-max-width:1200px;
-margin:auto;
-padding:14px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.logo{
-font-size:22px;
-font-weight:bold;
-}
-
-.logo span{
-color:#2563eb;
-}
-
-nav a{
-margin-left:22px;
-text-decoration:none;
-color:#374151;
-font-weight:500;
-transition:.2s;
-}
-
-nav a:hover{
-color:#2563eb;
-}
-
-.menu-toggle{
-display:none;
-font-size:26px;
-cursor:pointer;
-}
-
-/* ========================================= */
-/* 🔥 HERO */
-/* ========================================= */
-
-.hero{
-padding:80px 20px 50px;
-text-align:center;
-}
-
-.hero h1{
-font-size:clamp(2rem,4vw,3rem);
-font-weight:800;
-letter-spacing:-0.5px;
-margin-bottom:16px;
-}
-
-.hero p{
-color:#475569;
-font-size:18px;
-max-width:720px;
-margin:auto;
-}
-
-/* ========================================= */
-/* 🔥 TRENDING BANNER */
-/* ========================================= */
-
-.trending-banner{
-max-width:900px;
-margin:30px auto 50px;
-padding:20px;
-background:#ffffff;
-border-radius:22px;
-box-shadow:0 8px 24px rgba(0,0,0,0.06);
-}
-
-.trending-banner img{
-width:100%;
-height:auto;
-border-radius:16px;
-display:block;
-}
-
-/* ========================================= */
-/* 🏆 QUICK PICKS */
-/* ========================================= */
-
-.quick-picks{
-background:#ffffff;
+color:#111827;
 padding:40px 20px;
-margin:50px auto;
-max-width:1000px;
-border-radius:22px;
-box-shadow:0 8px 24px rgba(0,0,0,0.06);
+border-bottom:1px solid #e5e7eb;
 }
 
-.quick-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:18px;
-margin-top:25px;
+header h1{
+margin-bottom:8px;
 }
 
-.quick-card{
-background:#2563eb;
-color:white;
-padding:18px;
-border-radius:999px;
-text-decoration:none;
-font-weight:600;
-font-size:16px;
-box-shadow:0 10px 25px rgba(37,99,235,.35);
-transition:.25s;
-display:block;
+header p{
+color:#6b7280;
 }
 
-.quick-card:hover{
-transform:translateY(-4px);
-box-shadow:0 16px 35px rgba(37,99,235,.45);
-}
-
-/* ========================================= */
-/* 📂 CATEGORY CARDS */
-/* ========================================= */
-
-.categories{
-padding:60px 20px;
-}
-
-.category-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
-}
-
-.category-card{
-position:relative;
-display:block;
-border-radius:20px;
-overflow:hidden;
-text-decoration:none;
-color:white;
-aspect-ratio:1/1;
-box-shadow:0 8px 24px rgba(0,0,0,0.08);
-transition:.25s;
-}
-
-.category-card:hover{
-transform:translateY(-6px);
-box-shadow:0 16px 40px rgba(0,0,0,0.12);
-}
-
-.category-card img{
-position:absolute;
-inset:0;
-width:100%;
-height:100%;
-object-fit:cover;
-}
-
-.cat-info{
-position:absolute;
-bottom:0;
-left:0;
-right:0;
-padding:16px;
-background:linear-gradient(to top, rgba(0,0,0,.8), transparent);
-font-weight:bold;
-font-size:17px;
-text-align:left;
-}
-
-.cat-info .sub{
-font-size:12px;
-opacity:.9;
-font-weight:400;
-}
-
-/* ========================================= */
-/* 📦 PRODUCT GRID */
-/* ========================================= */
+/* PRODUCTS GRID */
 
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
 gap:24px;
-max-width:1100px;
+padding:40px;
+max-width:1200px;
 margin:auto;
-padding:40px 20px;
 }
+
+/* CARD */
 
 .card{
 background:#ffffff;
 padding:18px;
-border-radius:20px;
-box-shadow:0 8px 24px rgba(0,0,0,0.06);
-transition:.25s;
+border-radius:14px;
+box-shadow:0 4px 20px rgba(0,0,0,0.05);
+transition:transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover{
 transform:translateY(-6px);
+box-shadow:0 8px 30px rgba(0,0,0,0.08);
 }
 
 .card img{
 width:100%;
-border-radius:14px;
+border-radius:10px;
 margin-bottom:10px;
 }
 
@@ -249,14 +61,36 @@ margin:10px 0;
 font-size:18px;
 }
 
+/* BUTTON */
+
+.buy-btn{
+display:inline-block;
+margin-top:12px;
+background:#2563eb;
+color:white;
+padding:12px 16px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+transition:background 0.2s;
+}
+
+.buy-btn:hover{
+background:#1d4ed8;
+}
+
+/* TEXT ELEMENTS */
+
 .rating{
 color:#f59e0b;
 font-weight:bold;
+margin:6px 0;
 }
 
 .desc{
 font-size:14px;
-color:#475569;
+color:#4b5563;
+margin:6px 0;
 }
 
 .badge{
@@ -269,64 +103,156 @@ font-size:12px;
 margin:8px 0;
 font-weight:bold;
 }
+/* BRAND HEADER */
 
-/* ========================================= */
-/* 🔘 BUTTON */
-/* ========================================= */
-
-.buy-btn{
-display:inline-block;
-margin-top:14px;
-background:#2563eb;
-color:white;
-padding:14px 22px;
-border-radius:999px;
-text-decoration:none;
-font-weight:600;
-box-shadow:0 10px 25px rgba(37,99,235,.35);
-transition:.25s;
+.main-header{
+background:#ffffff;
+padding:16px 30px;
+border-bottom:1px solid #e5e7eb;
+text-align:left;
 }
 
-.buy-btn:hover{
-transform:translateY(-3px);
-box-shadow:0 16px 35px rgba(37,99,235,.45);
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#2563eb;
 }
 
-/* ========================================= */
-/* ⭐ TRUST SECTION */
-/* ========================================= */
+/* HERO */
+
+.hero{
+padding:60px 20px 30px;
+background:#f6f8fb;
+}
+
+.hero h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#6b7280;
+font-size:16px;
+}
+
+/* TOP PICK */
+
+.top-pick{
+max-width:900px;
+margin:40px auto;
+padding:0 20px;
+text-align:left;
+}
+
+.top-pick h2{
+margin-bottom:20px;
+}
+
+.top-card{
+display:flex;
+gap:20px;
+background:#ffffff;
+padding:20px;
+border-radius:14px;
+box-shadow:0 8px 30px rgba(0,0,0,0.06);
+flex-wrap:wrap;
+}
+
+.top-card img{
+width:100%;
+max-width:280px;
+height:auto;
+border-radius:12px;
+object-fit:contain;
+}
+
+.top-info{
+flex:1;
+}
+
+.top-info h3{
+margin-top:0;
+}
+
+/* TRUST SECTION */
 
 .trust{
 background:#ffffff;
-padding:60px 20px;
-margin-top:60px;
-border-radius:22px;
-max-width:900px;
-box-shadow:0 8px 24px rgba(0,0,0,0.06);
+padding:50px 20px;
+margin-top:40px;
 }
 
 .trust p{
 max-width:700px;
 margin:auto;
-color:#475569;
+color:#4b5563;
 }
 
-/* ========================================= */
-/* 🦶 FOOTER */
-/* ========================================= */
+/* FOOTER */
 
 footer{
 text-align:center;
 font-size:13px;
-color:#64748b;
-padding:40px 20px;
+color:#6b7280;
+padding:30px;
 }
 
-/* ========================================= */
-/* 📱 MOBILE */
-/* ========================================= */
+/* 🔷 NAVBAR */
 
-@media (max-width:768px){
+.navbar{
+background:#ffffff;
+border-bottom:1px solid #e5e7eb;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav-container{
+max-width:1200px;
+margin:auto;
+padding:14px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* LOGO */
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#111827;
+}
+
+.logo span{
+color:#2563eb;
+}
+
+/* NAV LINKS */
+
+nav a{
+margin-left:22px;
+text-decoration:none;
+color:#374151;
+font-weight:500;
+transition:color 0.2s;
+}
+
+nav a:hover{
+color:#2563eb;
+}
+
+/* MENU TOGGLE BUTTON */
+
+.menu-toggle{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* MOBILE STYLES */
+
+@media (max-width: 768px){
 
 .menu-toggle{
 display:block;
@@ -348,10 +274,240 @@ margin:0;
 padding:16px;
 border-bottom:1px solid #f1f5f9;
 display:block;
+text-align:center;
 }
 
 nav.show{
 display:flex;
+}
+
+}
+
+/* POPULAR GUIDES */
+
+.guides{
+padding:60px 20px;
+background:#ffffff;
+}
+
+.guide-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.guide-card{
+background:#f6f8fb;
+padding:22px;
+border-radius:14px;
+text-decoration:none;
+font-weight:bold;
+color:#111827;
+box-shadow:0 6px 25px rgba(0,0,0,0.05);
+transition:transform 0.2s, box-shadow 0.2s;
+}
+
+.guide-card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 35px rgba(0,0,0,0.08);
+color:#2563eb;
+}
+
+.updated{
+color:#6b7280;
+font-size:14px;
+margin-bottom:10px;
+}
+
+/* ============================= */
+/* 📂 CATEGORIES — IMAGE CARD PRO */
+/* ============================= */
+
+.categories{
+padding:60px 20px;
+background:#f6f8fb;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+/* CARD */
+
+.category-card{
+position:relative;
+display:block;
+border-radius:18px;
+overflow:hidden;
+text-decoration:none;
+color:white;
+box-shadow:0 12px 40px rgba(0,0,0,0.12);
+transition:transform 0.25s, box-shadow 0.25s;
+aspect-ratio:1/1;
+}
+
+.category-card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 50px rgba(0,0,0,0.18);
+}
+
+/* IMAGE */
+
+.category-card img{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* TEXT OVERLAY */
+
+.cat-info{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+padding:16px;
+background:linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
+font-weight:bold;
+font-size:17px;
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+}
+
+.cat-info .sub{
+font-size:12px;
+opacity:.9;
+font-weight:400;
+}
+
+
+/* ============================= */
+/* 🔥 TRENDING FEATURE BLOCK */
+/* ============================= */
+
+.trending-banner{
+max-width:900px;
+margin:30px auto 50px;
+padding:20px;
+background:#ffffff;
+border-radius:20px;
+box-shadow:0 15px 45px rgba(0,0,0,0.12);
+text-align:center;
+}
+
+.trending-banner img{
+width:100%;
+height:auto;
+border-radius:14px;
+display:block;
+}
+
+
+/* ============================= */
+/* 🏆 START HERE — QUICK PICKS */
+/* ============================= */
+
+.quick-picks{
+background:#ffffff;
+padding:40px 20px;
+margin:50px auto;
+max-width:1000px;
+border-radius:20px;
+box-shadow:0 15px 45px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin-top:25px;
+}
+
+.quick-card{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+padding:18px;
+border-radius:14px;
+text-decoration:none;
+font-weight:bold;
+font-size:16px;
+transition:all .25s;
+box-shadow:0 10px 25px rgba(37,99,235,.35);
+display:block;
+}
+
+.quick-card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(37,99,235,.45);
+}
+
+
+/* ============================= */
+/* 📦 FEATURED DEALS */
+/* ============================= */
+
+.featured-deals{
+padding:60px 20px;
+background:#ffffff;
+}
+
+.deal-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:24px;
+max-width:1000px;
+margin:auto;
+}
+
+.deal-card{
+background:#f6f8fb;
+border-radius:16px;
+padding:18px;
+text-align:center;
+box-shadow:0 8px 28px rgba(0,0,0,0.06);
+transition:transform 0.2s;
+}
+
+.deal-card:hover{
+transform:translateY(-6px);
+}
+
+.deal-card img{
+width:100%;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+.deal-card p{
+font-weight:600;
+margin:10px 0;
+}
+
+.deal-card a{
+text-decoration:none;
+color:#2563eb;
+font-weight:bold;
+}
+
+
+/* ============================= */
+/* 📱 MOBILE OPTIMIZATION */
+/* ============================= */
+
+@media (max-width:768px){
+
+.categories{
+padding:40px 16px;
 }
 
 .category-grid{
