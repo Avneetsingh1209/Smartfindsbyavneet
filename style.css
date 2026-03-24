@@ -604,3 +604,8 @@ display:none;   /* hide long grid on phone */
 }
 
 }
+
+.cat-info .sub{
+font-size:12px;
+opacity:.85;
+}
