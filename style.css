@@ -322,7 +322,7 @@ margin-bottom:10px;
 }
 
 /* ============================= */
-/* 📂 CATEGORIES — PRO STYLE */
+/* 📂 CATEGORIES — IMAGE CARD PRO */
 /* ============================= */
 
 .categories{
@@ -330,123 +330,15 @@ padding:60px 20px;
 background:#f6f8fb;
 }
 
-.categories h2{
-margin-bottom:30px;
-}
-
-/* GRID */
-
 .category-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:20px;
-max-width:900px;
+max-width:1000px;
 margin:auto;
 }
 
 /* CARD */
-
-.category-card{
-background:#ffffff;
-padding:18px 20px;
-border-radius:14px;
-text-decoration:none;
-color:#111827;
-font-weight:600;
-
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-
-box-shadow:0 6px 20px rgba(0,0,0,0.05);
-border:1px solid #eef2f7;
-
-transition:all 0.2s ease;
-}
-
-/* HOVER EFFECT */
-
-.category-card:hover{
-transform:translateY(-5px);
-box-shadow:0 12px 35px rgba(0,0,0,0.08);
-color:#2563eb;
-}
-
-/* ICON */
-
-.category-card .icon{
-font-size:20px;
-}
-
-/* MOBILE POLISH */
-
-@media (max-width: 480px){
-
-.category-card{
-padding:16px;
-font-size:15px;
-}
-
-}
-
-/* ============================= */
-/* 📱 MOBILE — PREMIUM CATEGORY UI */
-/* ============================= */
-
-@media (max-width: 768px){
-
-/* Section spacing */
-
-.categories{
-padding:40px 16px;
-}
-
-/* Grid becomes 2 columns */
-
-.category-grid{
-grid-template-columns:repeat(2, 1fr);
-gap:14px;
-}
-
-/* Card becomes larger tap target */
-
-.category-card{
-padding:18px 12px;
-border-radius:16px;
-font-size:15px;
-font-weight:600;
-
-flex-direction:column;
-gap:6px;
-
-box-shadow:0 8px 28px rgba(0,0,0,0.06);
-}
-
-/* Icon bigger for visual hierarchy */
-
-.category-card .icon{
-font-size:26px;
-}
-
-/* Remove hover jump on touch devices */
-
-.category-card:hover{
-transform:none;
-}
-
-}
-
-/* Prevent accidental text selection while tapping */
-
-.category-card{
--webkit-tap-highlight-color: transparent;
-user-select:none;
-}
-
-/* ===== CATEGORY IMAGE ===== */
-
-/* ===== PERFECT CATEGORY CARD LAYOUT ===== */
 
 .category-card{
 position:relative;
@@ -457,11 +349,15 @@ text-decoration:none;
 color:white;
 box-shadow:0 12px 40px rgba(0,0,0,0.12);
 transition:transform 0.25s, box-shadow 0.25s;
-
-aspect-ratio: 1 / 1;   /* ⭐ KEY FIX */
+aspect-ratio:1/1;
 }
 
-/* IMAGE FILLS ENTIRE CARD */
+.category-card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 50px rgba(0,0,0,0.18);
+}
+
+/* IMAGE */
 
 .category-card img{
 position:absolute;
@@ -479,21 +375,86 @@ bottom:0;
 left:0;
 right:0;
 padding:16px;
-
-background:linear-gradient(
-to top,
-rgba(0,0,0,0.75),
-rgba(0,0,0,0.0)
-);
-
+background:linear-gradient(to top, rgba(0,0,0,.8), rgba(0,0,0,0));
 font-weight:bold;
 font-size:17px;
 display:flex;
-align-items:center;
-gap:8px;
+flex-direction:column;
+align-items:flex-start;
 }
 
-/* ===== FEATURED DEALS ===== */
+.cat-info .sub{
+font-size:12px;
+opacity:.9;
+font-weight:400;
+}
+
+
+/* ============================= */
+/* 🔥 TRENDING FEATURE BLOCK */
+/* ============================= */
+
+.trending-banner{
+max-width:900px;
+margin:30px auto 50px;
+padding:20px;
+background:#ffffff;
+border-radius:20px;
+box-shadow:0 15px 45px rgba(0,0,0,0.12);
+text-align:center;
+}
+
+.trending-banner img{
+width:100%;
+height:auto;
+border-radius:14px;
+display:block;
+}
+
+
+/* ============================= */
+/* 🏆 START HERE — QUICK PICKS */
+/* ============================= */
+
+.quick-picks{
+background:#ffffff;
+padding:40px 20px;
+margin:50px auto;
+max-width:1000px;
+border-radius:20px;
+box-shadow:0 15px 45px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.quick-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:18px;
+margin-top:25px;
+}
+
+.quick-card{
+background:linear-gradient(135deg,#2563eb,#1d4ed8);
+color:white;
+padding:18px;
+border-radius:14px;
+text-decoration:none;
+font-weight:bold;
+font-size:16px;
+transition:all .25s;
+box-shadow:0 10px 25px rgba(37,99,235,.35);
+display:block;
+}
+
+.quick-card:hover{
+transform:translateY(-6px);
+box-shadow:0 18px 40px rgba(37,99,235,.45);
+}
+
+
+/* ============================= */
+/* 📦 FEATURED DEALS */
+/* ============================= */
 
 .featured-deals{
 padding:60px 20px;
@@ -538,74 +499,30 @@ color:#2563eb;
 font-weight:bold;
 }
 
-/* ===== TRENDING BANNER ===== */
 
-.trending-banner img{
-width:100%;
-height:auto;
-max-width:900px;   /* ⭐ Bigger on desktop */
-border-radius:16px;
-box-shadow:0 12px 40px rgba(0,0,0,0.12);
-display:block;
-margin:auto;
+/* ============================= */
+/* 📱 MOBILE OPTIMIZATION */
+/* ============================= */
+
+@media (max-width:768px){
+
+.categories{
+padding:40px 16px;
 }
 
-/* 📱 MOBILE — keep current perfect size */
-
-@media (max-width: 768px){
-
-.trending-banner img{
-max-width:100%;   /* full width on phone */
-}
-
-}
-
-.products-section{
-display:none;   /* hide long product grid */
-}
-
-.guides{
-display:none;   /* optional */
-}
-
+.category-grid{
+grid-template-columns:repeat(2,1fr);
+gap:14px;
 }
 
 .quick-picks{
-padding:40px 20px;
-background:#ffffff;
-text-align:center;
+margin:30px 16px;
+padding:30px 16px;
 }
 
-.quick-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:16px;
-max-width:900px;
-margin:auto;
+.trending-banner{
+margin:20px 16px 40px;
+padding:16px;
 }
 
-.quick-card{
-background:#2563eb;
-color:white;
-padding:18px;
-border-radius:14px;
-text-decoration:none;
-font-weight:bold;
-transition:transform 0.2s;
-}
-
-.quick-card:hover{
-transform:translateY(-4px);
-}
-@media (max-width: 768px){
-
-.products-section{
-display:none;   /* hide long grid on phone */
-}
-
-}
-
-.cat-info .sub{
-font-size:12px;
-opacity:.85;
 }
